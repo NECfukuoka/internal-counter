@@ -30,7 +30,7 @@ http://localhost:8083/CounterJson.php
 ```
 **localhostではなくIPアドレスを指定してもかまいません**
 
-**リクエストしたクライアントのRefererによりカウントを制限しています。自身のサイトで使用する場合は、CounterJson.phpで定義しているACCEPTABLE_REFERERを自身のサイトのURLに変更します。**
+**リクエストしたクライアントのRefererによりカウントを制限する場合は、CounterJson.phpでACCEPTABLE_REFERERをカウントを行うのサイトのURLに定義して下さい。**
 
 
 

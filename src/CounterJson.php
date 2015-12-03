@@ -1,5 +1,4 @@
 <?php
-define("ACCEPTABLE_REFERER","http://staging.maps.gsi.go.jp/");
 define("COUNTER_LOG", "/var/log/apache2/jsgi-map-counter.txt");
 
 counterAPI();
@@ -18,7 +17,7 @@ function counterAPI() {
 	}
 	$referer = $_SERVER["HTTP_REFERER"];
 	if (defined("ACCEPTABLE_REFERER") && strpos($referer,ACCEPTABLE_REFERER) === FALSE) {
-		// 設定されているリファラーがとリクエストにリファラーが一致しない
+		// 設定されているリファラーとリクエストのリファラーが一致しない
 		sendResult();
 		return;
 	}
